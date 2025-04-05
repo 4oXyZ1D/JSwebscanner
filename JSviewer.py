@@ -45,7 +45,6 @@ def analyze_site(site_url, blacklist):
         domain = urlparse(script_url).netloc.lower()
         script_name = urlparse(script_url).path.split('/')[-1] or '[root]'
 
-        # Опасный источник
         if domain in blacklist:
             results.append((site_url, script_url, 'Опасный источник', domain))
             continue
@@ -77,16 +76,16 @@ def print_results(results):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Анализатор скриптов на сайтах")
-    parser.add_argument('--list', action='store_true', help='Проверить список сайтов из файла sites.txt')
-    parser.add_argument('--csv', action='store_true', help='Сохранить результаты в CSV (results.csv)')
+    parser.add_argument('--list', nargs='?', const='sites.txt', metavar='FILE', help='Проверить список сайтов из указанного файла (по умолчанию: sites.txt)')
+    parser.add_argument('--csv', action='store_true', help='Сохранить результаты в CSV (output/results.csv)')
     args = parser.parse_args()
 
     blacklist = load_blacklist('blacklist.txt')
     all_results = []
 
     if args.list:
-        sites = load_sites('sites.txt')
-        print(f"[i] Проверка {len(sites)} сайтов из файла...")
+        sites = load_sites(args.list)
+        print(f"[i] Проверка {len(sites)} сайтов из файла {args.list}...")
         for site in sites:
             print(f"  — {site}")
             all_results.extend(analyze_site(site, blacklist))
