@@ -5,10 +5,10 @@ A simple script to check JS-script on website and check them for requests to mal
 
 Usage:
 
-Just check site: python script.py
-Just check site and save as CSV:	python script.py --csv
-Check sites from list:	python script.py --list
-Check sites from list + CSV:	python script.py --list --csv
+1. Just check site: python script.py
+2. Just check site and save as CSV:	python script.py --csv
+3. Check sites from list:	python script.py --list
+4. Check sites from list + CSV:	python script.py --list --csv
 
 Requirements:
 
