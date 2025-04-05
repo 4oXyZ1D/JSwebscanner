@@ -7,8 +7,8 @@ Usage:
 
 1. Just check site: python script.py
 2. Just check site and save as CSV:	python script.py --csv
-3. Check sites from list:	python script.py --list
-4. Check sites from list + CSV:	python script.py --list --csv
+3. Check sites from list:	python script.py --list {list_name.txt}
+4. Check sites from list + CSV:	python script.py --list {list_name.txt} --csv
 
 Requirements:
 
