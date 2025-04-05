@@ -9,3 +9,7 @@ Just check site: python script.py
 Just check site and save as CSV:	python script.py --csv
 Check sites from list:	python script.py --list
 Check sites from list + CSV:	python script.py --list --csv
+
+Requirements:
+
+pip install requests beautifulsoup4
