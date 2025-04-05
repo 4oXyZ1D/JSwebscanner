@@ -1,7 +1,7 @@
 # JSwebscanner
 A simple script to check JS-script on website and check them for requests to malicious sites from blacklist
 
-![изображение](https://github.com/user-attachments/assets/7d324bae-c806-4664-9327-d5a659d3cdd0)
+![изображение](https://github.com/user-attachments/assets/590a8b55-ccc4-47e5-8a7f-38a49b73995e)
 
 Usage:
 
