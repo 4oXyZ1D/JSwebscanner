@@ -13,3 +13,7 @@ Usage:
 Requirements:
 
 pip install requests beautifulsoup4
+
+Blacklist.txt I borrowed from this great project: https://github.com/schooldropout1337/lazyegg/
+but I strongly recommend to use ur own fresh one (4 example URLhaus: https://urlhaus.abuse.ch/downloads/text/)
+Use wisely ^_^
